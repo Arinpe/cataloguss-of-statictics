@@ -1,6 +1,6 @@
 # README
 
-## Description:
+## Description: Library Javacript
 
 A simple vanila Javascript, HTML, and CSS3, project .This project has the following features:
 
