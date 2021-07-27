@@ -5,7 +5,7 @@
 > A user can input the name of a city and the app retrieves the weather for that location.
 
 
-![screenshot]()
+![screenshot](weatherapp.png)
 
 ## Built With
 
@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Live Demo Link](loving-goldwasser-0fcae3.netlify.app)
+[Live Demo Link]()
 
 
 ## Getting Started
