@@ -1,5 +1,5 @@
 {
-  "name": "Weather_App",
+  "name": "Weather_app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Arinpe/Weather_App.git"
+    "url": "git+https://github.com/GraceOyiza/Weather_app.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Arinpe/Weather_App/issues"
+    "url": "https://github.com/GraceOyiza/Weather_app/issues"
   },
-  "homepage": "https://github.com/Arinpe/Weather_App#readme",
+  "homepage": "https://github.com/GraceOyiza/Weather_app#readme",
   "devDependencies": {
     "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.15",
