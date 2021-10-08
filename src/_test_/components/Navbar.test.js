@@ -1,5 +1,5 @@
 import Navbar from '../../components/Navbar';
-import shallowWrapper from '../testSetup';
+import shallowWrapper from './testSetup';
 
 describe('Navigation bar', () => {
   const nav = shallowWrapper(Navbar);
