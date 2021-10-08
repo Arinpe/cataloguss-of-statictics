@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import Youtube from 'react-youtube';
 import PropTypes from 'prop-types';
 import Card from './MovieCard';
-import Filter from '../components/Filter';
+import Filter from '../components/filter';
 import fetch from '../helpers/request';
 import { imageBaseUrl, youtubeOptions } from '../helpers/constant';
 import { filterMovies, getYoutubeVideoId } from '../helpers/common';
