@@ -5,7 +5,16 @@ export const generateRandomNumber = (num) => Math.floor(Math.random() * num);
 export const filterMovies = (data, param) => {
   const genreId = parseInt(param, 10);
   if (genreId === 0) return data;
-  return data.filter(({ genreIds }) => genreIds.includes(genreId));
+  switch (genreId) {
+    case 1:
+      return data.slice(12);
+    case 2:
+      return data.slice(7, 12);
+    case 3:
+      return data.slice(0, 7);
+    default:
+      return data;
+  }
 };
 
 export const getYoutubeVideoId = async (name) => {

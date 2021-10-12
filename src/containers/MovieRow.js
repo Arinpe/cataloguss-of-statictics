@@ -24,12 +24,11 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 function MovieRow({
-  title, moviesUrl, filterParam, moviesFilter, id, allGenres,
+  title, moviesUrl, filterParam, moviesFilter, id,
 }) {
   const classes = useStyles();
   const [movies, setMovies] = useState(null);
   const parentSectionId = useRef('');
-  const [genres, setGenres] = useState([]);
   const [trailerId, setTrailerId] = useState('');
   useEffect(async () => {
     const fetchMovies = async () => {
@@ -42,15 +41,12 @@ function MovieRow({
         name: movie.title || movie.name,
         overview: movie.overview,
         releaseDate: movie.first_air_date || movie.release_date,
-      }));
+      })).sort((a, b) => a - b);
     };
 
     try {
       const data = await fetchMovies();
       setMovies(data);
-      const flattedGenresArr = data.map(({ genreIds }) => (genreIds)).flat();
-      const uniqGenres = new Set(flattedGenresArr);
-      setGenres([...uniqGenres]);
       return true;
     } catch {
       return null;
@@ -95,9 +91,7 @@ function MovieRow({
           </Grid>
           <Grid item>
             <Filter
-              allGenres={allGenres}
               handleFilter={handleFilter}
-              genres={genres}
             />
           </Grid>
         </Grid>
@@ -131,10 +125,6 @@ MovieRow.propTypes = {
   filterParam: PropTypes.number.isRequired,
   moviesFilter: PropTypes.func.isRequired,
   id: PropTypes.string.isRequired,
-  allGenres: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
-  })).isRequired,
 };
 
 const mapStateToProps = (state) => ({
