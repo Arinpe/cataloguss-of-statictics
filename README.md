@@ -1,6 +1,6 @@
 ### Catalogue of Statstics 
-# MOVIE-FIESTA
-This application obtains data from TMDB via the TMDB API. Movie-fiesta is a web application that displays Movies and TV series based on different categories. Each category can be filtered based on genre.
+# MOVIE-APP
+This application obtains data from TMDB via the TMDB API. Movie-App is a web application that displays Movies and TV series based on different categories and filtered by how popular the movie is. Each category can be filtered based on genre.
 
 [Demo Link]()
 
