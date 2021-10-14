@@ -1,12 +1,12 @@
-### Catalogue of Dog Clothes
+### Catalogue of Statstics 
 # MOVIE-FIESTA
 This application obtains data from TMDB via the TMDB API. Movie-fiesta is a web application that displays Movies and TV series based on different categories. Each category can be filtered based on genre.
 
-[Demo Link](https://movie-fiesta.herokuapp.com/)
+[Demo Link]()
 
-<img src="fiesta.png">
+<img src="">
 
-<img src="movie.png">
+<img src="">
 
 
 
@@ -53,7 +53,7 @@ This application obtains data from TMDB via the TMDB API. Movie-fiesta is a web 
 
 
 ### Install and Setup
-- Clone repo to your local `https://github.com/GraceOyiza/movie-fiesta`
+- Clone repo to your local `https://github.com/Arinpe/movie-app`
 - cd into the cloned repo
 - Obtain [TMDB](https://www.themoviedb.org/) API KEY
 - Create a .env file in the root of the repository
@@ -68,17 +68,17 @@ This application obtains data from TMDB via the TMDB API. Movie-fiesta is a web 
 
 ## Author
 
-👤 **Popoola Grace Boluwatife**
+👤 **Adesuyi Adetola Tolulope**
 
-- Github: [@GraceOyiza](https://github.com/GraceOyiza)
-- Twitter: [@\_PopsonGrace](https://twitter.com/_PopsonGrace)
-- LinkedIn: [@grace](https://www.linkedin.com/in/grace-popoola)
+- Github: [@Arinpe](https://github.com/Arinpe)
+- Twitter: [@_detola_](https://twitter.com/_detola_)
+- LinkedIn: [@aadetoa](https://www.linkedin.com/in/aadetola)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/GraceOyiza/movie-fiesta/issues).
+Feel free to check the [issues page](https://github.com/Arinpe/movie-app/issues).
 
 ## Show your support
 
