@@ -1,0 +1,66 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+body {
+  background-color: #111;
+}
+
+section {
+  margin: 0;
+  padding: 0 10px;
+}
+
+input,
+label {
+  color: $white-color;
+}
+
+select {
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.2em;
+
+  select {
+    margin-left: 5px;
+  }
+}
+
+select:focus {
+  border: none;
+  outline: none;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-x {
+  @include flex(center, flex-start);
+}
+
+.d-flex-center {
+  @include flex(center, center);
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.max-width {
+  max-width: 1700px;
+  margin: auto;
+}

@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+### Catalogue of Dog Clothes
+# MOVIE-FIESTA
+This application obtains data from TMDB via the TMDB API. Movie-fiesta is a web application that displays Movies and TV series based on different categories. Each category can be filtered based on genre.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Demo Link](https://movie-fiesta.herokuapp.com/)
 
-## Available Scripts
+<img src="fiesta.png">
 
-In the project directory, you can run:
+<img src="movie.png">
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+### Production Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| **Dependency**   | **Use**                                              |
+| ---------------- | ---------------------------------------------------- |
+| prop-types       | Declare types for props passed into React components |
+| react            | React library                                        |
+| react-dom        | React library for DOM rendering                      |
+| react-redux      | Connects React components to Redux                   |
+| react-router-dom | React library for routing                            |
+| redux            | Library for unidirectional data flows                |
+| redux-thunk      | Async redux library middleware                               |
+| axios            | Make HTTP calls                                      |
+| react-youtube    | To embed youtue player in our appliation             |
+| movie-trailer    | To obtain the youtube video ID of a video            |
 
-### `yarn build`
+<br />
+<br />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Development Dependencies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| **Dependency**                  | **Use**                                                          |
+| ------------------------------- | ---------------------------------------------------------------- |
+| babel-eslint                    | Lint modern JavaScript via ESLint                                |
+| eslint                          | Lints JavaScript                                                 |
+| eslint-plugin-react-hooks       | Adds additional React-hooks-related rules to ESLint              |
+| eslint-plugin-import            | Advanced linting of ES6 imports                                  |
+| eslint-plugin-react             | Adds additional React-related rules to ESLint                    |
+| jest                            | Automated testing framework                                      |
+| enzyme                          | Test components, and write assertions                            |
+| enzyme-adapter-react-16         | React adapter for enzyme                                         |
+| stylelint                       | Lints Css                                                        |
+| stylelint-config-standard       | Advanced linting configuration for css                           |
+| stylelint-csstree-validator     | Advanced linting validation for css                              |
+| stylelint-scss                  | Adds additional SCSS-related rules to StyleLint                  |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Prerequisites
+- TMDB API KEY
+- Internet
+- Computer
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Install and Setup
+- Clone repo to your local `https://github.com/GraceOyiza/movie-fiesta`
+- cd into the cloned repo
+- Obtain [TMDB](https://www.themoviedb.org/) API KEY
+- Create a .env file in the root of the repository
+- Add all necessary environment variables to .env file (Check .env.sample file for required variables)
+- Open a terminal in the root of the app
+- Run `npm install` to install dependencies
+- Run Start up your server with `npm run start`
+- Open http://localhost:3000/ in your browser.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Testing
+- Open a terminal and run `npm run test`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Author
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+👤 **Popoola Grace Boluwatife**
 
-## Learn More
+- Github: [@GraceOyiza](https://github.com/GraceOyiza)
+- Twitter: [@\_PopsonGrace](https://twitter.com/_PopsonGrace)
+- LinkedIn: [@grace](https://www.linkedin.com/in/grace-popoola)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🤝 Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Contributions, issues and feature requests are welcome!
 
-### Code Splitting
+Feel free to check the [issues page](https://github.com/GraceOyiza/movie-fiesta/issues).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Show your support
 
-### Analyzing the Bundle Size
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Acknowledgments
+<p>
+- TMDB
+</p>
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📝 License
