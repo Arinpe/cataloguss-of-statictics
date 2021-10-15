@@ -1,4 +1,4 @@
-import Filter from '../../components/Filter';
+import Filter from '../../components/filter';
 import shallowWrapper from '../testSetup';
 
 describe('Filter Component', () => {
