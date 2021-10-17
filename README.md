@@ -1,5 +1,5 @@
 ### Catalogue of Statstics 
-# MOVIE-APP.
+# MOVIE-APP
 This application obtains data from TMDB via the TMDB API. Movie-App is a web application that displays Movies and TV series based on different categories and filtered by how popular the movie is. Each category can be filtered based on genre.
 
 [Demo Link](https://fast-temple-55497.herokuapp.com/)
