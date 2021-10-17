@@ -22,11 +22,11 @@ describe('Filter Component', () => {
     const filterLabel = filter.find('label');
     const select = filter.find('select');
     const options = filter.find('option');
-    expect(filterLabel.text()).toEqual('Genre:All');
+    expect(filterLabel.text()).toEqual('Popularity:');
     expect(filterLabel.text()).not.toEqual('');
     expect(select).toHaveLength(1);
     expect(select).not.toHaveLength(0);
-    expect(options).toHaveLength(1);
+    expect(options).toHaveLength(4);
     expect(options).not.toBeNull();
   });
 

@@ -1,4 +1,4 @@
-import { Grid, makeStyles } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import React, { useEffect, useState, useRef } from 'react';
 import { connect } from 'react-redux';
 import Youtube from 'react-youtube';
@@ -9,24 +9,12 @@ import fetch from '../helpers/request';
 import { imageBaseUrl, youtubeOptions } from '../helpers/constant';
 import { filterMovies, getYoutubeVideoId } from '../helpers/common';
 import filterAction from '../actions/filter';
+import { movieRowStyles } from '../helpers/styles';
 
-const useStyles = makeStyles((theme) => ({
-  itemRoot: {
-    padding: '0 !important',
-  },
-  container: {
-    flexWrap: 'nowrap',
-    'overflow-x': 'scroll',
-    padding: theme.spacing(2, 0),
-  },
-  heading: {
-    padding: '15px 0',
-  },
-}));
 function MovieRow({
   title, moviesUrl, filterParam, moviesFilter, id,
 }) {
-  const classes = useStyles();
+  const classes = movieRowStyles();
   const [movies, setMovies] = useState(null);
   const parentSectionId = useRef('');
   const [trailerId, setTrailerId] = useState('');

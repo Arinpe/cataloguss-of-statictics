@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import Youtube from 'react-youtube';
 import {
-  makeStyles, Grid, Typography, Button,
+  Grid, Typography, Button,
 } from '@material-ui/core';
 import { connect } from 'react-redux';
 import { useHistory } from 'react-router-dom';
@@ -10,6 +10,7 @@ import { generateRandomNumber, getYoutubeVideoId } from '../helpers/common';
 import { urls, imageBaseUrl, youtubeOptions } from '../helpers/constant';
 import fetch from '../helpers/request';
 import setMovie from '../actions/movie';
+import { bannerStyles } from '../helpers/styles';
 
 export const Banner = ({ updateMovie }) => {
   const [movie, setMovie] = useState(null);
@@ -51,28 +52,6 @@ export const Banner = ({ updateMovie }) => {
     bgLink = `url('${imageBaseUrl + movie?.backdrop_path}') no-repeat center`;
   }
 
-  const styles = makeStyles((theme) => ({
-    bg: {
-      background: bgLink,
-      backgroundSize: 'cover',
-      width: '100%',
-      height: '600px',
-      paddingTop: theme.spacing(6),
-    },
-    content: {
-      height: '100%',
-      paddingLeft: '30px',
-      color: 'white',
-    },
-    btnContainer: {
-      marginTop: '20px',
-    },
-    btn: {
-      marginRight: '10px',
-      background: 'white',
-    },
-  }));
-
   const handleTrailerClick = async () => {
     if (trailerId) {
       setTrailerId('');
@@ -87,7 +66,8 @@ export const Banner = ({ updateMovie }) => {
     return null;
   };
 
-  const classes = styles();
+  const bannerClasses = bannerStyles(bgLink);
+  const classes = bannerClasses();
   return trailerId ? (
     <Youtube videoId={trailerId} opts={youtubeOptions} />
   ) : (

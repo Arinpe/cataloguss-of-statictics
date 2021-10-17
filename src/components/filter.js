@@ -27,12 +27,14 @@ function Filter({ handleFilter }) {
   return (
     <div className="d-flex align-items-center">
       <div className="d-flex align-items-center">
-        <label htmlFor="categoryFilter" className="mr-3">
+        <span className="mr-3">
           Popularity:
-          <select className="form-control" name="categoryFilter" id="categoryFilter" onChange={handleFilter}>
-            {[{ name: 'All', id: 0 }, ...genreOptions].map(({ name, id }) => <option value={id} key={id}>{name}</option>)}
-          </select>
-        </label>
+        </span>
+        <select className="form-control" name="categoryFilter" id="categoryFilter" onChange={handleFilter}>
+          {[...genreOptions].map(({ name, id }) => (
+            <option value={id} key={Math.floor(Math.random() * 20000)}>{name}</option>
+          ))}
+        </select>
       </div>
     </div>
   );
