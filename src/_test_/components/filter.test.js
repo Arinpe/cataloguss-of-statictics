@@ -19,7 +19,7 @@ describe('Filter Component', () => {
   });
 
   test('should have select element with label', () => {
-    const filterLabel = filter.find('label');
+    const filterLabel = filter.find('span');
     const select = filter.find('select');
     const options = filter.find('option');
     expect(filterLabel.text()).toEqual('Popularity:');
