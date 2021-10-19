@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero Section should render Banner 1`] = `ReactWrapper {}`;
